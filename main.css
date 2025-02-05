@@ -1,0 +1,92 @@
+@import url("https://use.typekit.net/yde1sdm.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color : #458FF6;
+    --text-primary : #FFFFFF;
+    --text-secondary : #000000;
+    --text-third : #7D7987;
+    --text-fourth : #4089ED;
+    --nav-text : #1F1534;
+    --nav-bg : #e2e0e0;
+}
+
+.container{
+    padding: 0px 0px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.navbar{
+    display: flex;
+    /* background-color: var(--nav-bg); */
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.logo img{
+    width: 160px;
+    height: 41px;
+}
+.navbar .menu ul{
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style-type: none;
+    font-family: "muli", sans-serif;
+    font-weight: 400;
+    color: var(--nav-text);
+}
+
+.menu ul li.active{
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.menuicon{
+    display: none;
+}
+
+
+/* Responsive Desing */
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        height: 70px;
+        padding: 0 15px;
+      }
+    
+      .navbar .menu ul {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        left: 0px;
+        /* background: var(--nav-bg); */
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .navbar .menu ul.toggle-menu {
+        display: flex; /* Show when toggled */
+    }
+    
+
+    .menuicon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}

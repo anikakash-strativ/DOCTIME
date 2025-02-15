@@ -272,6 +272,99 @@
   .icon{
     color: var(--primary-color);
   }
+
+  /* Review */
+
+  .review-box{
+    min-height: 421px;
+    width: 100%;
+    background: linear-gradient(to left, #67C3F3, #5A98F2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 24px;
+  }
+
+  .review-info{
+    display: flex;  
+    padding: 10px 25px;
+  }
+
+  .review-user-profile{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .review-user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .review-user-info h2{
+    color: var(--text-primary);
+  }
+  .review-user-info p{
+    color: var(--text-primary);
+  }
+  
+  .review-description{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-primary);
+  }
+
+  .review-description p{
+    line-height: 30px;
+  }
+
+  .review-controls {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.control-btn {
+    background: none;
+     border: none;
+    color: rgb(41, 147, 235);
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.control-btn:hover {
+    opacity: 0.7;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgb(146, 200, 231);
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.dot.active {
+    background: #61b1f3; /* Gold color for active dot */
+    width: 12px;
+    height: 12px;
+}
+
 /* Responsive Desing */
 
 @media screen and (max-width: 1024px) {

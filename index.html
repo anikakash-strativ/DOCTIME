@@ -39,7 +39,7 @@
       <div class="hero">
         <div class="heading">
           <h1 class="heading-style">Virtual healthcare for you</h1>
-          <p class="body-text" style="font-size: 21px;">
+          <p class="body-text" style="font-size: 21px">
             Trafalgar provides progressive, and affordable healthcare,
             accessible on mobile and online for everyone
           </p>
@@ -99,7 +99,7 @@
             <div class="box">
               <img width="50px" src="./assets/consult.png" alt="Consultation" />
               <h2>Consultation</h2>
-              <p  class="body-text">
+              <p class="body-text">
                 Free consultation with our trusted doctors and get the best
                 recommendations
               </p>
@@ -111,7 +111,7 @@
             <div class="box">
               <img width="50px" src="./assets/details.png" alt="Details info" />
               <h2>Details info</h2>
-              <p  class="body-text">
+              <p class="body-text">
                 Free consultation with our trusted doctors and get the best
                 recommendations
               </p>
@@ -127,7 +127,7 @@
                 alt="Emergency care"
               />
               <h2>Emergency care</h2>
-              <p  class="body-text">
+              <p class="body-text">
                 You can get 24/7 urgent care for yourself or your children and
                 your lovely family
               </p>
@@ -139,7 +139,9 @@
             <div class="box">
               <img width="50px" src="./assets/tracking.png" alt="Tracking" />
               <h2>Tracking</h2>
-              <p  class="body-text">Track and save your medical history and health data</p>
+              <p class="body-text">
+                Track and save your medical history and health data
+              </p>
             </div>
           </div>
         </div>
@@ -152,43 +154,85 @@
     <!-- healthcare -->
 
     <div class="container">
-     <div class="leading-box">
-      <div class="healthcare-img">
-        <img src="./assets/leading.png" alt="" />
+      <div class="leading-box">
+        <div class="healthcare-img">
+          <img src="./assets/leading.png" alt="" />
+        </div>
+        <div class="healthcare-info">
+          <h1>Leading healthcare Providers</h1>
+          <hr class="divider-start" />
+          <p class="body-text">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </p>
+          <button class="btn">Learn more</button>
+        </div>
       </div>
-      <div class="healthcare-info">
-        <h1>Leading healthcare Providers</h1>
-        <hr class="divider-start" />
-        <p class="body-text">
-          Trafalgar provides progressive, and affordable healthcare, accessible
-          on mobile and online for everyone. To us, it’s not just work. We take
-          pride in the solutions we deliver
-        </p>
-        <button class="btn">Learn more</button>
-      </div>
-     </div>
     </div>
 
     <div class="container">
       <div class="app-box">
-       <div class="healthcare-img">
-         <img src="./assets/app.png" alt="" />
-       </div>
-       <div class="healthcare-info">
-         <h1>Download our mobile apps</h1>
-         <hr class="divider-start" />
-         <p class="body-text">
-           Trafalgar provides progressive, and affordable healthcare, accessible
-           on mobile and online for everyone. To us, it’s not just work. We take
-           pride in the solutions we deliver
-         </p>
-         <button class="btn">
-          Download 
-          <i class="fa-solid fa-arrow-down"></i>
-        </button>
-       </div>
+        <div class="healthcare-img">
+          <img src="./assets/app.png" alt="" />
+        </div>
+        <div class="healthcare-info">
+          <h1>Download our mobile apps</h1>
+          <hr class="divider-start" />
+          <p class="body-text">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone. To us, it’s not just
+            work. We take pride in the solutions we deliver
+          </p>
+          <button class="btn">
+            Download
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
       </div>
-     </div>
+    </div>
+
+    <!-- Review -->
+
+    <div class="container">
+      <div class="review-box">
+        <div class="reveiw-hearder">
+          <h1 class="heading-style" style="color: white">
+            What our customer are saying
+          </h1>
+          <hr class="divider" style="background-color: white" />
+        </div>
+        <div class="review-info">
+          <div class="review-user-profile">
+            <div class="review-pic">
+              <img id="review-image" class="review-image" src="./assets/reviewprofile.png" alt="" />
+            </div>
+            <div class="review-user-info">
+              <h2 id="review-name">Edward Newgate</h2>
+              <p id="review-position">Founder Circle</p>
+            </div>
+          </div>
+          <div class="review-description">
+            <p class="body-text" style="color: white" id="review-text">
+              “Our dedicated patient engagement app and web portal allow you to
+              access information instantaneously (no tedeous form, long calls,
+              or administrative hassle) and securely”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="review-controls">
+        <button class="control-btn" onclick="prevReview()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <div class="dots" id="dots-container"></div>
+
+        <button class="control-btn" onclick="nextReview()">
+            <i class="fas fa-arrow-right"></i>
+        </button>
+    </div>
+    </div>
 
     <script src="./scripts/utils.js"></script>
   </body>

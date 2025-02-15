@@ -158,16 +158,15 @@
 }
 
 .service-detail{
-    flex: 0 1 calc(33.33% - 10px); /* Adjusted for three items per row */
+    flex: 0 1 calc(33.33% - 10px); 
     min-height: 100%;
-    box-sizing: border-box; /* Ensures padding doesn't affect layout */
-    background-color: #fff; /* Adds a white background for contrast */
-    border-radius: 20px; /* Adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box; 
+    background-color: #fff; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     padding: 10px 20px;
     width: 350px;
     height: 310px;
-    
 }
 .box{
     display: flex;

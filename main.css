@@ -4,7 +4,7 @@
 *{
     margin: 0;
     padding: 0;
-    border: 1px green solid;
+    /* border: 1px green solid; */
 }
 
 :root{
@@ -29,6 +29,7 @@
     font-family: "MUli", sans-serif;
     font-weight: 700;
     color: var(--text-secondary);
+    text-align: center;
 }
 
 .container{
@@ -80,11 +81,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 .heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     width: 40%;
 }
@@ -156,14 +159,12 @@
     border-radius: 20px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     padding: 10px 20px;
-    width: 350px;
-    height: 310px;
 }
 .box{
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin: 59px 0px;
+    margin: 12px 0px;
     padding: 12px 5px;
     gap: 10px;
     p {
@@ -195,7 +196,7 @@
     border: 1px solid var(--primary-color);
     background-color: white;
     cursor: pointer;
-    margin-top: 43px;
+    margin: 23px 0;
     font-family: "Mulish", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -223,12 +224,10 @@
 }
 
 .healthcare-info{
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-    
+    justify-content: center;
 }
 
 
@@ -284,6 +283,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: center;
+    gap: 15px;
   }
   .review-user-info h2{
     color: var(--text-primary);
@@ -365,7 +365,7 @@
 }
 
 .blog img{
-    width: 353px;
+    width: 327px;
     height: 240px;
 }
 
@@ -408,6 +408,7 @@
 .footer-box {
   display: flex;
   justify-content: space-between;
+  gap: 61px;
 }
  
 .logo{
@@ -423,7 +424,10 @@
     font-size: 18px;
     line-height: 28px;
 }
-
+.options{
+    display: flex;
+    gap: 65px;
+}
 .footer ul{
     list-style: none;
 }
@@ -447,7 +451,7 @@
     
     .container{
         width: 90%;
-        padding: 0 px;
+        padding: 0px;
     }
     .navbar {
         height: 70px;
@@ -455,25 +459,117 @@
       }
     
       .navbar .menu ul {
-        display: none; /* Hide by default */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 75px;
         right: 0px;
         left: 0px;
-        /* background: var(--nav-bg); */
         border-radius: 5px;
         padding: 10px;
     }
     
     .navbar .menu ul.toggle-menu {
-        display: flex; /* Show when toggled */
+        display: flex; 
     }
     
-
     .menuicon {
         display: block;
         font-size: 30px;
         cursor: pointer;
+    }
+
+    .blogs, .blog{
+        justify-content: space-evenly;
+    }
+
+    .healthcare-img{
+        min-width: 455px;
+    }
+    .review-user-profile{
+        flex-direction: column;
+    }
+    .review-user-info{
+        text-align: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-image: url('./assets/heroimg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero-img{
+        display: none;
+    }
+    .heading {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6); /* Optional: Add background for readability */
+        height: 50vh;
+    }
+    .service-detail{
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    .healthcare-img{
+        display: none;
+    }
+
+    .leading-box{
+        background-image: url('./assets/leading.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .healthcare-info{
+        height: 50vh;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    .app-box{
+        background-image: url('./assets/app.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .review-info{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        align-items: center;
+
+    }
+    .review-description{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-box{
+        flex-direction: column-reverse;
+    }
+    .options{
+        justify-content: space-between;
+    }
+    .logo{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .service-detail{
+        flex: 1 1 100%;
+    }
+    .options{
+        flex-wrap: wrap;
+        gap: 25px;
     }
 }

@@ -32,8 +32,8 @@ This project is a clone of a telemedicine landing page, built with responsivenes
 - One of the most challenging aspects of the project.
 
 ## Project Context
-This project was assigned to me at **@Strativ-dev**, where I was tasked with creating a landing page using **Flexbox** for layout and responsiveness.
+This project was assigned to me at @Strativ-dev during my internship, where I was tasked with creating a landing page using **Flexbox** for layout and responsiveness.
 
 ---
-This documentation provides an overview of the project and its key technical aspects. Let me know if you need any further refinements!
+
 

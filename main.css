@@ -40,13 +40,18 @@
     margin-bottom: 150px;
 }
 
-.navbar{
+/* Resuable  class */
+
+.flex-between{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navbar{
     height: 80px;
     border-radius: 5px;
 }
+
 
 .logo img{
     width: 160px;
@@ -78,10 +83,8 @@
 /* hero section */
 
 .hero{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    align-items: center;
+    
 }
 .heading{
     display: flex;
@@ -211,8 +214,6 @@
 
 /* leading health care */
 .leading-box{
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     gap: 25px;
 }
@@ -235,18 +236,11 @@
     align-items: flex-start;
     justify-content: center;
 }
-
-
-
-
-
-  .app-box{
-    display: flex;
-    justify-content: space-between;
+.app-box{
     width: 100%;
     gap: 25px;
     flex-direction: row-reverse;
-  }
+}
 
   .icon{
     color: var(--primary-color);
@@ -257,10 +251,8 @@
   .review-box{
     min-height: 421px;
     background: linear-gradient(to left, #67C3F3, #5A98F2);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     padding: 25px;
     border-radius: 24px;
   }
@@ -362,21 +354,14 @@
     border-radius: 20px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     background-color: var(--card-bg);
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
 }
-
-/* .blog img{
-    width: 327px;
-    height: 240px;
-} */
 
 .blog-text{
     margin-top: 45px;
     padding: 0 17px;
 }
-
 
 .blog-text h3{
     font-family: "Mulish", sans-serif;
@@ -409,8 +394,6 @@
 }
 
 .footer-box {
-  display: flex;
-  justify-content: space-between;
   gap: 61px;
 }
  
